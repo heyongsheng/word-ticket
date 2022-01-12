@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 01:00:16
+ * @LastEditTime: 2022-01-13 01:06:01
  * @Descripttion: 游戏首页
 -->
 <template>
@@ -89,16 +89,18 @@ export default {
     startGame () {
       // 改变游戏状态
       this.gameStatus = 'start'
+      // 游戏轮数加一
+      this.round++
       // 重置本轮游戏词库
       this.currentWordLibrary = [...this.wordLibrary]
+      // 根据轮数设置游戏时间
+      this.time = this.time + (this.round - 1 ) * 5
       // 重置时间
       this.currentTime = this.time
       // 清空输入框
       this.wordInput = ''
       // 重置距离
       this.currentDistance = this.distance
-      // 游戏轮数加一
-      this.round++
       // 随机获取一个单词
       this.drawWord()
       // 开始检票
@@ -167,7 +169,7 @@ export default {
      * @return {*}
      */    
     gameOver () {
-      this.$refs.wordInput.blur()
+      // this.$refs.wordInput.blur()
       // 判断胜负
       if (this.currentTime > 0) {
         // 胜利
