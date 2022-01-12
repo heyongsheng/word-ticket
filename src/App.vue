@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-12 17:37:05
+ * @LastEditTime: 2022-01-12 22:15:41
  * @Descripttion: 游戏首页
 -->
 <template>
@@ -14,11 +14,11 @@
     <div class="game-wrap">
       <!-- 展示区 -->
       <div class="show-wrap">
-        <div class="word">abandon</div>
-        <div class="mean">放弃</div>
+        <div class="word">{{ currentWord.word }}</div>
+        <div class="mean">{{ currentWord.mean }}</div>
       </div>
       <!-- 输入框 -->
-      <input type="text" class="word-input">
+      <input type="text" class="word-input" v-model="wordInput" @input="wordCheck" />
     </div>
   </div>
 </template>
@@ -29,10 +29,51 @@ export default {
   name: 'App',
   data () {
     return {
-      //
+      wordInput: '', // 输入框的值
+      wordLibrary: require('@/assets/data/word.json'), // 单词库
+      currentWordLibrary: [], // 当前单词库
+      currentWord: {}, // 当前单词
     }
   },
-  components: {
+  mounted () {
+    this.startGame()
+  },
+  methods: {
+    /**
+     * @description: 开始游戏
+     * @param {*}
+     * @return {*}
+     */
+    startGame () {
+      this.currentWordLibrary = [...this.wordLibrary]
+      this.drawWord()
+    },
+    /**
+     * @description: 抽取单词
+     * @param {*}
+     * @return {*}
+     */
+    drawWord () {
+      let dataLength = this.currentWordLibrary.length
+      if (dataLength === 0) {
+        this.currentWordLibrary = [...this.wordLibrary]
+        this.drawWord()
+        return
+      }
+      let randomIndex = Math.floor(Math.random() * dataLength)
+      this.currentWord = this.currentWordLibrary.splice(randomIndex, 1)[0]
+    },
+    /**
+     * @description: 单词检测
+     * @param {*}
+     * @return {*}
+     */
+    wordCheck () {
+      if (this.wordInput === this.currentWord.word) {
+        this.drawWord()
+        this.wordInput = ''
+      }
+    }
   }
 }
 </script>
@@ -51,6 +92,7 @@ export default {
   background: url(./assets/img/bg.png) no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: PingFangSC-Regular, Microsoft Yahei, sans-serif;
 }
 /* 展示区 */
 .show-wrap {
@@ -61,15 +103,15 @@ export default {
   color: #fff;
   text-align: center;
   user-select: none;
-  padding: 5px 10px;
-  background: rgba(0, 0, 0, .5);
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 .show-wrap .word {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
 }
 .show-wrap .mean {
-  font-size: 30px;
+  font-size: 40px;
 }
 /* 输入框 */
 .word-input {
@@ -87,5 +129,15 @@ export default {
   background: transparent;
   outline: none;
   color: #fff;
+}
+
+/* 手机端样式适配 */
+@media screen and (max-width: 500px) {
+  .show-wrap .word {
+    font-size: 40px;
+  }
+  .show-wrap .mean {
+    font-size: 30px;
+  }
 }
 </style>

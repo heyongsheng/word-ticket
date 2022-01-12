@@ -4,23 +4,295 @@
     "mean": "放弃"
   },
   {
-    "word": "abandon",
-    "mean": "放弃"
+    "word": "hello",
+    "mean": "你好"
   },
   {
-    "word": "abandon",
-    "mean": "放弃"
+    "word": "background",
+    "mean": "背景"
   },
   {
-    "word": "abandon",
-    "mean": "放弃"
+    "word": "action",
+    "mean": "行动"
   },
   {
-    "word": "abandon",
-    "mean": "放弃"
+    "word": "option",
+    "mean": "选项"
   },
   {
-    "word": "abandon",
-    "mean": "放弃"
+    "word": "arrow",
+    "mean": "箭头"
+  },
+  {
+    "word": "label",
+    "mean": "标签"
+  },
+  {
+    "word": "issue",
+    "mean": "问题"
+  },
+  {
+    "word": "different",
+    "mean": "不同的"
+  },
+  {
+    "word": "available",
+    "mean": "可用"
+  },
+  {
+    "word": "return",
+    "mean": "返回"
+  },
+  {
+    "word": "issue",
+    "mean": "问题"
+  },
+  {
+    "word": "attribute",
+    "mean": "属性"
+  },
+  {
+    "word": "before",
+    "mean": "在此之前"
+  },
+  {
+    "word": "order",
+    "mean": "顺序"
+  },
+  {
+    "word": "array",
+    "mean": "阵列"
+  },
+  {
+    "word": "video",
+    "mean": "视频"
+  },
+  {
+    "word": "bottom",
+    "mean": "底部"
+  },
+  {
+    "word": "content",
+    "mean": "内容"
+  },
+  {
+    "word": "space",
+    "mean": "空间"
+  },
+  {
+    "word": "editor",
+    "mean": "编辑"
+  },
+  {
+    "word": "exist",
+    "mean": "存在"
+  },
+  {
+    "word": "scope",
+    "mean": "作用域"
+  },
+  {
+    "word": "circle",
+    "mean": "圆圈"
+  },
+  {
+    "word": "spell",
+    "mean": "拼写"
+  },
+  {
+    "word": "delimit",
+    "mean": "定界"
+  },
+  {
+    "word": "pay",
+    "mean": "支付"
+  },
+  {
+    "word": "classify",
+    "mean": "分类"
+  },
+  {
+    "word": "interfere",
+    "mean": "干涉"
+  },
+  {
+    "word": "mind",
+    "mean": "介意"
+  },
+  {
+    "word": "clear",
+    "mean": "清除"
+  },
+  {
+    "word": "exit",
+    "mean": "出口"
+  },
+  {
+    "word": "report",
+    "mean": "报告"
+  },
+  {
+    "word": "backup",
+    "mean": "备份"
+  },
+  {
+    "word": "version",
+    "mean": "版本"
+  },
+  {
+    "word": "find",
+    "mean": "发现"
+  },
+  {
+    "word": "pointer",
+    "mean": "指针"
+  },
+  {
+    "word": "subset",
+    "mean": "子集"
+  },
+  {
+    "word": "client",
+    "mean": "客户端"
+  },
+  {
+    "word": "check",
+    "mean": "检查"
+  },
+  {
+    "word": "keyboard",
+    "mean": "键盘"
+  },
+  {
+    "word": "full",
+    "mean": "满的"
+  },
+  {
+    "word": "should",
+    "mean": "应该"
+  },
+  {
+    "word": "single",
+    "mean": "仅有一个的"
+  },
+  {
+    "word": "provide",
+    "mean": "提供"
+  },
+  {
+    "word": "title",
+    "mean": "标题"
+  },
+  {
+    "word": "toggle",
+    "mean": "切换"
+  },
+  {
+    "word": "code",
+    "mean": "代码"
+  },
+  {
+    "word": "such",
+    "mean": "这样的"
+  },
+  {
+    "word": "guide",
+    "mean": "指导"
+  },
+  {
+    "word": "tree",
+    "mean": "树"
+  },
+  {
+    "word": "device",
+    "mean": "设备"
+  },
+  {
+    "word": "call",
+    "mean": "呼叫"
+  },
+  {
+    "word": "continue",
+    "mean": "继续"
+  },
+  {
+    "word": "indicate",
+    "mean": "表明"
+  },
+  {
+    "word": "until",
+    "mean": "直到"
+  },
+  {
+    "word": "begin",
+    "mean": "开始"
+  },
+  {
+    "word": "place",
+    "mean": "位置"
+  },
+  {
+    "word": "rename",
+    "mean": "重命名"
+  },
+  {
+    "word": "close",
+    "mean": "关"
+  },
+  {
+    "word": "profile",
+    "mean": "配置文件"
+  },
+  {
+    "word": "unless",
+    "mean": "除非"
+  },
+  {
+    "word": "combination",
+    "mean": "组合"
+  },
+  {
+    "word": "except",
+    "mean": "除了"
+  },
+  {
+    "word": "turn",
+    "mean": "转动"
+  },
+  {
+    "word": "back",
+    "mean": "返回"
+  },
+  {
+    "word": "section",
+    "mean": "部分"
+  },
+  {
+    "word": "sure",
+    "mean": "当然"
+  },
+  {
+    "word": "follow",
+    "mean": "跟随"
+  },
+  {
+    "word": "need",
+    "mean": "需要"
+  },
+  {
+    "word": "split",
+    "mean": "拆分"
+  },
+  {
+    "word": "access",
+    "mean": "访问权限"
+  },
+  {
+    "word": "cancel",
+    "mean": "取消"
+  },
+  {
+    "word": "additional",
+    "mean": "附加内容"
   }
 ]
