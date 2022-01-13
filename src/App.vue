@@ -3,13 +3,13 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 12:19:29
+ * @LastEditTime: 2022-01-13 13:22:06
  * @Descripttion: 游戏首页
 -->
 <template>
   <div id="app">
     <!-- 文章链接 -->
-    <a class="help-btn audio-btn" target="_blank" href="https://baidu.com">?</a>
+    <a class="help-btn audio-btn" target="_blank" href="https://juejin.cn/post/7052556327389921294/">?</a>
     <!-- 声音控制 -->
     <div class="audio-btn" :class="{active: audioState}" @click="audioState = !audioState">♫</div>
 
@@ -25,14 +25,14 @@
     <div class="game-wrap" v-show="gameStatus === 'start'">
       <!-- 进度区 -->
       <div class="progress-wrap">
-        <!-- 剩余发车时间 -->
+        <!-- 余票 -->
         <div class="progress">
           <p class="progress-text">余票：{{currentTicketCount}}</p>
           <div class="progress-inside" :style="{width: currentTicketCount / ticketCount * 100 + '%'}">
             <p class="progress-text">余票：{{currentTicketCount}}</p>
           </div>
         </div>
-        <!-- 距离车站距离 -->
+        <!-- 剩余验证码 -->
         <div class="progress">
           <p class="progress-text">剩余验证码：{{currentCodeCount}}</p>
           <div class="progress-inside" :style="{width: currentCodeCount / codeCount * 100 + '%'}">
@@ -78,7 +78,7 @@ export default {
       round: 0,
       ticketCount: 60, // 本轮票量
       currentTicketCount: 0, // 当前票量
-      codeCount: 50, // 总验证码数
+      codeCount: 40, // 总验证码数
       currentCodeCount: 0, // 剩余验证码数量
       wordInput: '', // 输入框的值
       wordLibrary: require('@/assets/data/word.json'), // 单词库
@@ -153,11 +153,6 @@ export default {
      */
     drawWord () {
       let dataLength = this.currentWordLibrary.length
-      if (dataLength === 0) {
-        this.currentWordLibrary = [...this.wordLibrary]
-        this.drawWord()
-        return
-      }
       let randomIndex = Math.floor(Math.random() * dataLength)
       this.currentWord = this.currentWordLibrary.splice(randomIndex, 1)[0]
     },
