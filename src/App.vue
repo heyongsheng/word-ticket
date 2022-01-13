@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 11:59:54
+ * @LastEditTime: 2022-01-13 12:19:29
  * @Descripttion: 游戏首页
 -->
 <template>
@@ -180,7 +180,7 @@ export default {
         // 重置输入框
         this.wordInput = ''
         // 验证码数量减一
-        this.currentCodeCount-= 10
+        this.currentCodeCount--
         if (this.currentCodeCount <= 0) {
           this.gameOver()
           return
