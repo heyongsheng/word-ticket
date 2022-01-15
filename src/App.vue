@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 13:22:06
+ * @LastEditTime: 2022-01-13 14:00:48
  * @Descripttion: 游戏首页
 -->
 <template>
