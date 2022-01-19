@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:31:53
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 14:00:48
+ * @LastEditTime: 2022-01-19 17:02:05
  * @Descripttion: 游戏首页
 -->
 <template>
@@ -17,7 +17,7 @@
     <div class="panel-class" v-show="gameStatus === 'desc'">
       <div class="panel-text">青山抢票</div>
       <div class="panel-desc">
-        又到春节了，你归心似箭，但还没买到票，青山抢票推出敲单词加速抢票服务，输入正确50个单词才能买票成功，拼手速的时候到了，快冲！<br>
+        又到春节了，你归心似箭，但还没买到票，青山抢票推出敲单词加速抢票服务，输入正确30个单词才能买票成功，拼手速的时候到了，快冲！<br>
         输入 abandon 开始游戏
       </div>
     </div>
@@ -78,7 +78,7 @@ export default {
       round: 0,
       ticketCount: 60, // 本轮票量
       currentTicketCount: 0, // 当前票量
-      codeCount: 40, // 总验证码数
+      codeCount: 30, // 总验证码数
       currentCodeCount: 0, // 剩余验证码数量
       wordInput: '', // 输入框的值
       wordLibrary: require('@/assets/data/word.json'), // 单词库
