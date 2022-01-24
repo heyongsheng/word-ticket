@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:29:02
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-13 13:21:52
+ * @LastEditTime: 2022-01-24 13:20:38
  * @Descripttion: 
 -->
 
@@ -13,6 +13,10 @@
 > gitee地址：https://gitee.com/ihope_top/word-ticket</br>
 > github地址：https://github.com/heyongsheng/word-ticket</br>
 > 游戏已开源，欢迎大家体验
+
+## 公众号：程序员十里青山
+
+![image.png](/public/img/gz.jpg)
 ## 游戏规则
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/64e232e5941b4f6c837d8b994dd31235~tplv-k3u1fbpfcp-watermark.image?)
