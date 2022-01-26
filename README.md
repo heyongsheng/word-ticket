@@ -3,7 +3,7 @@
  * @Date: 2022-01-12 15:29:02
  * @email: 1378431028@qq.com
  * @LastEditors: 贺永胜
- * @LastEditTime: 2022-01-24 13:20:38
+ * @LastEditTime: 2022-01-26 12:02:34
  * @Descripttion: 
 -->
 
@@ -14,7 +14,7 @@
 > github地址：https://github.com/heyongsheng/word-ticket</br>
 > 游戏已开源，欢迎大家体验
 
-## 公众号：程序员十里青山
+## 公众号：百里青山
 
 ![image.png](/public/img/gz.jpg)
 ## 游戏规则
